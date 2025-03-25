@@ -12,6 +12,7 @@ html{
     box-sizing: border-box;
     /*1rem= 10px*/
     font-size: 62.5%;
+    overscroll-behavior: none;
 }
 
 *,*:before,*:after{
@@ -27,6 +28,7 @@ body {
     font-size: 1.6rem;
     line-height: 2;
     color:var(--white-text)
+    scroll
 }
 ul{
     list-style: none;

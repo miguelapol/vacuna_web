@@ -430,20 +430,31 @@ form{
         padding: 2rem;
     }
 }
-
-.recomendar{
- display: inline-block;
- width:100%;
-}
-.card-horizontal{
-    display:flex;
-    align-items:center;
-    height:50px;
+/*accordeon information*/
+.recomendaciones-info .card-horizontal .head-recomendaciones-info{
+    display: flex;
     justify-content: space-between;
-    border: 2px solid rgba(0,0,0,0.3);
-    border-radius:5px;
-    margin-top: 2rem;
+    padding: 2.5rem 0;
+    align-items: center;
+    cursor: pointer;
+
 }
+.recomendaciones-info .card-horizontal .head-recomendaciones-info i{
+    transition: transform 0.2s ease-in;
+}
+.recomendaciones-info .card-horizontal .content-recomendad-info{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.25s ease-in;
+    border-bottom: 1px solid #afafaf;
+}
+.recomendaciones-info .card-horizontal.active .head-recomendaciones-info i:last-of-type{
+    transform: rotate(180deg);
+}
+.content-recomendad-info p{
+    margin: 0;
+}
+
 .card-horizontal i{
     margin-left:1rem;
     margin-right:1rem;
@@ -457,7 +468,10 @@ form{
     font-size:small;
     font-weight: 800;
     color: var(--title);
-}
+} 
+
+
+
 .seccion-emergencia.contenedor {
     padding-top: 2rem;
   }
